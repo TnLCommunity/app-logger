@@ -28,7 +28,7 @@ Used to control the log format.
 
 **Format**: A log format string of [log record attributes](https://docs.python.org/3.7/library/logging.html#logrecord-attributes)
 
-**Default**: `%(levelname)%(name)%(asctime)%(module)%(funcName)%(lineno)%(message)``
+**Default**: `%(levelname)%(name)%(asctime)%(module)%(funcName)%(lineno)%(message)`
 
 ## Usage
 The logger initializes itself and makes itself available as a variable called `app_logger`. It's a regular python logger and can be used as such.
