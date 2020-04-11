@@ -2,6 +2,9 @@
 
 This is a drop in logger that uses [python-json-logger](https://github.com/madzak/python-json-logger) to log json to stdout and stderr appropriately. DEBUG and INFO go to stdout, WARNING, ERROR, CRITICAL go to stderr.
 
+# Installation
+`pip install app-logger`
+
 # Configuration
 All configuration is through environment variables, all have defaults so none are required.
 
