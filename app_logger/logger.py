@@ -7,7 +7,7 @@ from pythonjsonlogger import jsonlogger
 logger_name = os.getenv('LOGGER_NAME', 'root')
 log_levels = os.getenv('LOG_LEVELS', 'root=INFO').split(',')
 format_str = os.getenv('LOG_FORMAT', '%(levelname)%(name)%(asctime)%(module)%(funcName)%(lineno)%(message)')
-app_logger = getLogger(logger_name)
+app_logger = getLogger() if logger_name == 'root' else getLogger(logger_name)
 
 
 def init_logging():
